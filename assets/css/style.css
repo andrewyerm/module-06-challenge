@@ -1,0 +1,87 @@
+/* create general terracotta color scheme for page */
+:root {
+    --background: url('path-to-your-image.jpg') no-repeat center center fixed;
+    --background-color: rgba(247, 242, 231, 0.8);
+    --main-color: #d2461f;
+    --text-color: #4a3c2f;
+    --border-radius: 5px;
+    --forecast-bg: #d25d1f;
+    --forecast-text: #fff;
+}
+
+
+body {
+    background: var(--background);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+    padding-top: 20px;
+    color: var(--text-color);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+/* round out and form search area */
+#search-section, #weather-section {
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    margin-bottom: 20px;
+}
+
+#city-input, #search-btn {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    border: 1px solid #d2461f;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    background-color: #d2461f;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* forecast theme and layout */
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-color: #d2461f;
+}
+
+.forecast-item, .city-button {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    background-color: #d2461f;
+    color: var(--forecast-text);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 40px;
+    height: auto;
+}
+
+h3, h4 {
+    margin: 10px 0;
+}

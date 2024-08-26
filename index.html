@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather forecast</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     
+    <!-- very basic header, just text -->
+    <header>
+        <h1>Weather Dashboard</h1>
+        <p>Search for your city and see the weather!</p>
+    </header>
+    <main>
+       <!-- search section divided, its own area -->
+       
+        <section id="search-section">
+            <h2>Search for a City:</h2>
+            <form id="city-search-form">
+                <input type="text" id="city-input" placeholder="Example: Miami Beach" />
+                <button type="button" id="search-btn">Search</button>
+            </form>
+            <hr>
+            <div id="search-history"></div>
+        </section>
+
+        <section id="weather-section">
+            <div id="current-weather"></div>
+            <div id="forecast"></div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./script"></script>
 </html>
